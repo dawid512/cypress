@@ -1,0 +1,46 @@
+{
+    "controlers":{
+        "static":{
+            "logo_xpath": "//*[contains(@src, 'logo.png')]",
+            "logo_css": "img[src*='logo.png']"
+        },
+        "buttons": {
+            "signUP_login":"//*[contains(@href, 'login')]",
+            "signup":"//button[@type='submit' and text()='Signup']",
+            "create_account":"//button[@type='submit' and text()='Create Account']",
+            "continue": "//a[ text()='Continue']",
+            "delete_account": "//*[contains(@href, '/delete_account')]"
+        },
+        "text": {
+            "new_user_signUP_text": "//*[contains(text(), 'New User Signup!')]",
+            "enter_Account_Information_text": "//*[contains(text(), 'Enter Account Information')]",
+            "account_created": "//*[contains(text(), 'Account Created!')]",
+            "account_deleted": "//*[contains(text(), 'Account Deleted!')]",
+            "loggedInAs": "//*[contains(text(), 'Logged in as')]//b[contains(text(),'%s')]"
+        },
+        "input":{
+            "name": "//form[@action='/signup']//input[@placeholder='Name']",
+            "email": "//form[@action='/signup']//input[@placeholder='Email Address']",
+            "title_Mr": "//form[@action='/signup']//input[@value='Mr']",
+            "password_input": "//form[@action='/signup']//input[@type='password' and @id='password']",
+            "select_day": "//form[@action='/signup']//select[@id='days']",
+            "select_month": "//form[@action='/signup']//select[@id='months']",
+            "select_year": "//form[@action='/signup']//select[@id='years']",
+            "checkbox_newsletter": "//form[@action='/signup']//input[@id='newsletter']",
+            "checkbox_receive_special_offers": "//form[@action='/signup']//input[@id='optin']",
+            "first_name_input": "//form[@action='/signup']//input[@type='text' and @id='first_name']",
+            "last_name_input": "//form[@action='/signup']//input[@type='text' and @id='last_name']",
+            "company_input": "//form[@action='/signup']//input[@type='text' and @id='company']",
+            "address_input": "//form[@action='/signup']//input[@type='text' and @id='address1']",
+            "address2_input": "//form[@action='/signup']//input[@type='text' and @id='address2']",
+            "country_input": "//form[@action='/signup']//select[@id='country']",
+            "state_input": "//form[@action='/signup']//input[@type='text' and @id='state']",
+            "city_input": "//form[@action='/signup']//input[@type='text' and @id='city']",
+            "zipcode_input": "//form[@action='/signup']//input[@type='text' and @id='zipcode']",
+            "mobile_number_input": "//form[@action='/signup']//input[@type='text' and @id='mobile_number']"
+        },
+        "condition": {
+            "beVisible": "be.visible"
+        }
+    }
+}
